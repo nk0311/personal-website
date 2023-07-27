@@ -1,10 +1,14 @@
 import {
-    mobile,
-    backend,
-    creator,
+    student,
+    gym,
+    car,
     web,
     javascript,
     typescript,
+    firebase,
+    python,
+    cpp,
+    postgres,
     html,
     css,
     reactjs,
@@ -16,10 +20,12 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
+    mixspot,
     tesla,
     shopify,
     carrent,
+    eazycommerce,
+    motore,
     jobit,
     tripguide,
     threejs,
@@ -34,28 +40,25 @@ import {
       id: "work",
       title: "Work",
     },
-    {
-      id: "contact",
-      title: "Contact",
-    },
+   
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Programmer",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Lifelong Learner",
+      icon: student,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Workout Enthusiast",
+      icon: gym,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Car Enthusiast",
+      icon: car,
     },
   ];
   
@@ -72,10 +75,7 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+
     {
       name: "React JS",
       icon: reactjs,
@@ -93,9 +93,22 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Python",
+      icon: python,
     },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "Postgres",
+      icon: postgres,
+    },
+    {
+      name: "Firebase",
+      icon: firebase,
+    },
+  
     {
       name: "Three JS",
       icon: threejs,
@@ -104,162 +117,89 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+   
+  
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer Intern",
+      company_name: "MixSpot",
+      icon: mixspot,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2022 - August 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Automated a system to manage client information using SQL and Python",
+        "Devised, wrote, and revised existing technical reports while providing critical feedback",
+        "Evaluated company software, hardware, and data protection policies for effectiveness and security",
+        "Assessed systems, web design, financial data, and marketing strategy to raise customer impact",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+ 
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "EazyCommerce",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based application that allows users to browse, search, review, and checkout products.\
+        Used Django for backend and React for the frontend with redux management.\
+        The project also includes user authentication the PayPal API integration. Images are stored using AWS S3 bucket,\
+        while data is managed with a PostgresSQL database with AWS rds. The app is deployed \
+        on Heroku, and Postman was used for backend route testing. ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "django",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "redux",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
+          name: "aws",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "postgresSQL",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: eazycommerce,
+      source_code_link: "https://github.com/nk0311/eazycommerce/tree/main/backend",
     },
     {
-      name: "Trip Guide",
+      name: "Motore",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Created a cross-platform mobile flutter application that \
+        serves as a user's diary for car expenses. The app utilizes \
+        Google Firebase as a secure no-SQL backend to store user data. \
+        I also implemented Google Auth for user authentication and integrated \
+        Google Maps API to find nearby gas stations. Additionally, There's a \
+        'shop' feature using HTTP requests which enables users to purchase car parts.",
       tags: [
         {
-          name: "nextjs",
+          name: "dart with flutter",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "google auth",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: motore,
+      source_code_link: "https://github.com/jabezj1/Motore",
     },
+  
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
